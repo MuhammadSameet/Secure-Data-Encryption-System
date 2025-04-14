@@ -110,7 +110,7 @@ elif choice == "Login":
                 st.session_state.failed_attempts = 0
                 st.success(f"Welcome {username}!")
             else:
-                st.session_state.failed_attempts +- 1
+                st.session_state.failed_attempts += 1
                 remainig = 3 - st.session_state.failed_attempts
                 st.error(f"❌ Invalide Credentials! Attempts left: {remainig}")
 
